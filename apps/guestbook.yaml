@@ -7,8 +7,8 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: guestbook
-    name: kind
+    server: 'https://kubernetes.default.svc'
+    namespace: kube-system
   project: default
   source:
     path: general/helm-guestbook
